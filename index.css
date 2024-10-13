@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box {
+  width: 80vmin;
+  height: 80vh;
+  border: 1px solid black;
+  box-shadow: 2px 4px 8px gray;
+}
+.box h1 {
+  text-align: center;
+  padding: 10px;
+}
+.Stone-Content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.Stone-Content img {
+  cursor: pointer;
+  width: 20vmin;
+  object-fit: cover;
+  height: 20vmin;
+  border-radius: 50%;
+}
+.Stone-Content img:hover {
+  border: 5px solid black;
+}
+.winner {
+  display: flex;
+  width: 50%;
+  margin: 40px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.winnersection span {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+@media (max-width: 500px) {
+  .winner {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.winnersection p {
+  text-align: center;
+  font-size: 25px;
+  margin: 5px 0;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.button button {
+  width: 50vmin;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: green;
+  color: white;
+  font-size: 2.5vmin;
+  border-radius: 10px;
+  outline: none;
+}
